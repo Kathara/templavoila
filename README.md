@@ -1,3 +1,10 @@
+# Kathara/templavoila
+I have forked the master from schnitzler/templavoila. The adaptations I made are the ones that were needed for me to make templavoila work with TYPO3 8.7. It was needed in a project that had to be updated from TYPO3 6.2 to the newest version, and only minimal adaptations led to it working for now. I haven't and will not change anything else in this project but maybe it will be helpful for anyone who has the same problems I had.
+
+_enjoy_
+
+---
+
 # schnitzler/templavoila
 
 [![Build Status](https://travis-ci.org/alexanderschnitzler/templavoila.svg?branch=master)](https://travis-ci.org/alexanderschnitzler/templavoila)
