@@ -19,6 +19,7 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Imaging\Icon;
 use TYPO3\CMS\Core\Imaging\IconFactory;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
+use TYPO3\CMS\Core\Messaging\FlashMessageRendererResolver;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -75,6 +76,10 @@ class Shortcut implements Renderable
             FlashMessage::INFO
         );
 
-        return $flashMessage->render() . $jumpToShortcutSourceLink;
+        $flashMessageRenderer = GeneralUtility::makeInstance(
+            FlashMessageRendererResolver::class
+          )->resolve();
+
+        return $flashMessageRenderer->render([$flashMessage]) . $jumpToShortcutSourceLink;
     }
 }
