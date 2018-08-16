@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'php' => '5.5.0-7.1.99',
-            'typo3' => '7.6.0-7.6.99'
+            'typo3' => '8.7'
         ],
         'conflicts' => [
             'kb_tv_clipboard' => '-0.1.0',
